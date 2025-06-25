@@ -4,25 +4,25 @@ import './SideBar.css';
 import { FaRegCalendarAlt } from 'react-icons/fa';
 
 function Sidebar({ events }) {
+
   const today = dayjs();
   const todayEvents = events.filter(event => event.date === today.format('YYYY-MM-DD'));
   const importantTasks = todayEvents.filter(event => event.important === true);
-
   const renderMiniCalendar = () => {
-    const start = today.startOf('month').startOf('week');
-    const end = today.endOf('month').endOf('week');
-    const days = [];
-    let date = start;
+  const start = today.startOf('month').startOf('week');
+  const end = today.endOf('month').endOf('week');
+  const days = [];
+  let date = start;
 
-    while (date.isBefore(end) || date.isSame(end, 'day')) {
-      days.push(date);
-      date = date.add(1, 'day');
-    }
+  while (date.isBefore(end) || date.isSame(end, 'day')) {
+    days.push(date);
+    date = date.add(1, 'day');
+  }
 
-    return (
+   return (
       <div className="mini-calendar">
         <div className="mini-calendar-header">
-          <FaRegCalendarAlt className="calendar-icon" /> Mini Calendar
+          <FaRegCalendarAlt className="calendar-icon" />Calendar
         </div>
         <div className="mini-calendar-grid">
           {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, idx) => (

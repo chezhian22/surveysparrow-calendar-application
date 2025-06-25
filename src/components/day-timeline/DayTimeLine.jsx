@@ -4,12 +4,10 @@ import dayjs from 'dayjs';
 import { useParams } from 'react-router-dom';
 
 const DayTimeline = ({ events }) => {
-  const hours = Array.from({ length: 23 }, (_, i) => i + 1); // 1am to 11pm
-  const { date } = useParams(); // expected format: 'YYYY-MM-DD'
-
-  // Filter events for the selected date
+  
+  const hours = Array.from({ length: 23 }, (_, i) => i + 1); 
+  const { date } = useParams(); 
   const filteredEvents = events.filter(event => dayjs(event.date).isSame(dayjs(date), 'day'));
-
   const getEventsForHour = (hour) => {
     return filteredEvents.filter(event => {
       const eventHour = parseInt(event.time.split(':')[0], 10);

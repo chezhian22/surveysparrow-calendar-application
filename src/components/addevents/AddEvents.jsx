@@ -20,7 +20,7 @@ function AddEventModal({ onClose, onSave }) {
         <h3>Add New Event</h3>
         <form onSubmit={handleSubmit}>
           <label>
-            Title<span>*</span>
+            <span>Title <span className='label-required'>*</span></span>
             <input
               type="text"
               value={title}
@@ -29,8 +29,8 @@ function AddEventModal({ onClose, onSave }) {
             />
           </label>
 
-          <label>
-            Date<span>*</span>
+          <label className='form-label'>
+            <span>Date <span className='label-required'>*</span></span>
             <input
               type="date"
               value={date}
@@ -40,7 +40,7 @@ function AddEventModal({ onClose, onSave }) {
           </label>
 
           <label>
-            Time<span>*</span>
+           <span>Time <span className='label-required'>*</span></span>
             <input
               type="time"
               value={time}
@@ -50,7 +50,7 @@ function AddEventModal({ onClose, onSave }) {
           </label>
 
           <label>
-            Duration<span>*</span>
+           <span>Duration <span className='label-required'>*</span></span>
             <input
               type="text"
               placeholder="e.g., 1h 30m"
@@ -71,12 +71,13 @@ function AddEventModal({ onClose, onSave }) {
           </label>
 
           <label className="checkbox-container">
-            <input
+            <span><input
               type="checkbox"
               checked={important}
               onChange={(e) => setImportant(e.target.checked)}
-            />
-            <span>Mark as Important</span>
+            /><span> Mark as Important</span></span>
+            
+            
           </label>
 
           <div className="modal-buttons">

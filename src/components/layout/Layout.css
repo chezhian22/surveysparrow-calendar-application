@@ -1,11 +1,8 @@
-/* Layout.css */
-
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f7f9fb;
 }
-
 
 .container1 {
   margin-left: 270px;
@@ -32,8 +29,6 @@ body {
   padding: 10px;
   box-sizing: border-box;
 }
-
-
 
 @media(max-width:750px){
   .container1,.container2{

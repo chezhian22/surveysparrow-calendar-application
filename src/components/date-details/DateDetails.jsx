@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './DateDetails.css';
-import dayjs from 'dayjs';
 import AddEventModal from '../addevents/AddEvents';
 import { useNavigate } from 'react-router-dom';
 

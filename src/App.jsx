@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import eventsData from './data/events.json';
@@ -14,7 +13,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/surveysparrow-calendar-application">
       <Routes>
         <Route path="/" element={<Layout events={events} setEvents={setEvents} />}>
           <Route index element={<Home />} />

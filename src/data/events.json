@@ -1,48 +1,82 @@
 [
   {
-    "title": "Team Meeting",
-    "description": "ther is one meeting i really need to go there then only i can know what happend ther otherwise everthing will be collapsed",
+    "title": "Client Sync-up",
+    "description": "Weekly catch-up with the client to discuss progress, blockers, and next deliverables.",
     "date": "2025-06-24",
-    "time": "10:00",
-    "duration": "1h",
+    "time": "09:30",
+    "duration": "45m",
     "important": true
   },
   {
-    "title": "Code 111111111Review",
-    "description": "ther is one meeting i really need to go there then only i can know what happend ther otherwise everthing will be collapsed",
+    "title": "Design Review",
+    "description": "Reviewing new UI mockups for the dashboard revamp with the design and frontend teams.",
     "date": "2025-06-24",
-    "time": "10:30",
-    "duration": "30m",
+    "time": "11:00",
+    "duration": "1h",
     "important": false
   },
   {
-    "title": "Product Demo",
-    "description": "ther is one meeting i really need to go there then only i can know what happend ther otherwise everthing will be collapsed",
-    "date": "2025-06-26",
-    "time": "14:00",
+    "title": "Lunch & Learn",
+    "description": "An informal knowledge sharing session on system architecture over lunch.",
+    "date": "2025-06-25",
+    "time": "13:00",
     "duration": "1h",
-    "important": true
-  },{
-    "title":"SurveySparrow test",
-    "description": "ther is one meeting i really need to go there then only i can know what happend ther otherwise everthing will be collapsed",
-    "date":"2025-06-27",
-    "time":"12:00",
-    "duration":"3h",
     "important": true
   },
-   {
-    "title": "Team Meeting1",
-    "description": "ther is one meeting i really need to go there then only i can know what happend ther otherwise everthing will be collapsed",
+  {
+    "title": "Hiring Panel Discussion",
+    "description": "Shortlisting and finalizing candidates from the last round of interviews for the backend role.",
     "date": "2025-06-25",
-    "time": "10:00",
+    "time": "16:00",
+    "duration": "1h 30m",
+    "important": true
+  },
+  {
+    "title": "Product Strategy Call",
+    "description": "Strategic planning call to outline goals for Q3 and discuss roadmap alignment.",
+    "date": "2025-06-26",
+    "time": "11:00",
     "duration": "1h",
     "important": true
-  }, {
-    "title": "Meeting",
-    "description": "ther is one meeting i really need to go there then only i can know what happend ther otherwise everthing will be collapsed",
-    "date": "2025-06-25",
-    "time": "10:00",
-    "duration": "1h",
+  },
+  {
+    "title": "QA Regression Testing",
+    "description": "Comprehensive testing before the next release, focusing on regression bugs.",
+    "date": "2025-06-26",
+    "time": "15:00",
+    "duration": "2h",
     "important": true
+  },
+  {
+    "title": "Team Outing",
+    "description": "Outdoor team building activities and casual networking to improve team morale.",
+    "date": "2025-06-27",
+    "time": "10:00",
+    "duration": "4h",
+    "important": true
+  },
+  {
+    "title": "Town Hall Meeting",
+    "description": "Monthly leadership town hall to discuss company updates and address employee queries.",
+    "date": "2025-06-27",
+    "time": "15:00",
+    "duration": "1h 30m",
+    "important": true
+  },
+  {
+    "title": "1:1 with Manager",
+    "description": "Personal review and discussion about goals, challenges, and growth plans.",
+    "date": "2025-06-28",
+    "time": "11:00",
+    "duration": "45m",
+    "important": true
+  },
+  {
+    "title": "Code Refactoring Session",
+    "description": "Improving the codebase for better maintainability without altering functionality.",
+    "date": "2025-06-28",
+    "time": "14:00",
+    "duration": "2h",
+    "important": false
   }
 ]
