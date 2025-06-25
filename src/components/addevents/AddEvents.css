@@ -1,0 +1,126 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 24, 39, 0.5); /* Semi-dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Flat, modern modal box */
+.modal.clean-style {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px 28px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', sans-serif;
+  color: #1f2937;
+}
+
+.modal h3 {
+  font-size: 22px;
+  margin-bottom: 30px !important;
+  color: #111827;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.modal label span {
+  color: red;
+  margin-left: 2px;
+}
+
+.modal input,
+.modal textarea {
+  margin-top: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  transition: border-color 0.2s ease;
+}
+
+.modal input:focus,
+.modal textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.modal textarea {
+  resize: none;
+  font-family: inherit;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.checkbox-container input {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modal-buttons button {
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal-buttons button[type="submit"] {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.modal-buttons button[type="submit"]:hover {
+  background-color: #2563eb;
+}
+
+.modal-buttons button[type="button"] {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+.modal-buttons button[type="button"]:hover {
+  background-color: #d1d5db;
+}
+
+@media (max-width: 500px) {
+  .modal.clean-style {
+    width: 80%;
+    padding: 18px;
+  }
+}

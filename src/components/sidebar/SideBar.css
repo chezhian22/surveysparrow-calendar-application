@@ -1,0 +1,142 @@
+/* Sidebar Container */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  background-color: #f8fafc;
+  border-right: 1px solid #e5e7eb;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  overflow: hidden;
+}
+
+/* Scrollable content area only */
+.sidebar-section {
+  overflow-y: auto;
+  padding-right: 6px;
+  max-height: 180px;
+}
+
+/* Scrollbar Styling */
+.sidebar-section::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar-section::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 4px;
+}
+
+/* Section Headings */
+.sidebar-section h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+/* Event Styling */
+.sidebar-event {
+  background-color: #e0f2fe;
+  padding: 5px 7px;
+  margin-bottom: 3px;
+  border-radius: 8px;
+  font-size: 12px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.sidebar-event:hover {
+  background-color: #bae6fd;
+  transform: translateX(4px);
+}
+.sidebar-event.important {
+  background-color: #fde68a;
+}
+.sidebar-event strong {
+  color: #111827;
+  display: block;
+}
+.sidebar-event small {
+  color: #374151;
+  font-size: 13px;
+  margin-top: 4px;
+  display: block;
+}
+
+.no-events {
+  font-style: italic;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Mini Calendar */
+.mini-calendar {
+  flex-shrink: 0;
+  padding-top: 10px;
+}
+.mini-calendar-header {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.calendar-icon {
+  font-size: 18px;
+}
+.mini-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+.mini-day-label {
+  text-align: center;
+  font-weight: bold;
+  color: #6b7280;
+  font-size: 13px;
+}
+.mini-day {
+  text-align: center;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 13px;
+  background-color: #f3f4f6;
+  color: #111827;
+  transition: background-color 0.3s ease;
+}
+.mini-day:hover {
+  background-color: #e2e8f0;
+}
+.mini-today {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+}
+
+/* ✅ Mobile Support */
+@media (max-width: 750px) {
+  .sidebar {
+    width: 80%;
+    z-index: 10;
+    top: 70px;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .sidebar-section {
+    max-height: 30vh; /* adjust to fit mobile */
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+
+ 
+}

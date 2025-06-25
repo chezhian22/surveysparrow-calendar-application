@@ -1,0 +1,43 @@
+/* Layout.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fb;
+}
+
+
+.container1 {
+  margin-left: 270px;
+}
+
+.toggle-sidebar-button {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background-color: #ffffffdd;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  z-index: 1000;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.container1,
+.container2 {
+  min-height: 100vh;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+
+@media(max-width:750px){
+  .container1,.container2{
+    margin-left:0px;
+    
+  }
+}
